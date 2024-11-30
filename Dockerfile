@@ -33,7 +33,7 @@ RUN mkdir -p ${FUNCTION_DIR}
 CMD ["build/disconnect.handler"]
 
 # Send Notification
-FROM amazon/aws-lambda-nodejs:18 AS sendvendor
+FROM amazon/aws-lambda-nodejs:18 AS sendnotification
 
 ARG FUNCTION_DIR="/var/task"
 
